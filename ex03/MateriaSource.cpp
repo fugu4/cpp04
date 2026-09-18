@@ -43,7 +43,7 @@ void MateriaSource::learnMateria(AMateria* m)
 	{
 		if(this->templates[i] == NULL)
 		{
-			this->templates[i] = m->clone();
+			this->templates[i] = m;
 			return;
 		}
 	}

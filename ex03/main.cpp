@@ -8,15 +8,8 @@
 int main()
 {
     IMateriaSource* src = new MateriaSource();
-
-    AMateria* ice = new Ice();
-    AMateria* cure = new Cure();
-
-    src->learnMateria(ice);
-    src->learnMateria(cure);
-
-    delete ice;
-    delete cure;
+    src->learnMateria(new Ice());
+    src->learnMateria(new Cure());
 
     ICharacter* me = new Character("me");
 
