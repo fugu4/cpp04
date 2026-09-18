@@ -3,7 +3,7 @@
 #include <iostream>
 
 Cure::Cure()
-	: AMateria("Cure")
+	: AMateria("cure")
 {
 }
 

@@ -39,7 +39,7 @@ Character& Character::operator=(const Character& other)
 	return *this;
 }
 
-Character::~Character
+Character::~Character()
 {
 	for(int i = 0; i < 4; i++)
 		delete this->inventory[i];
@@ -69,7 +69,7 @@ void Character::unequip(int idx)
 {
 	if(idx < 0 || idx >= 4)
 		return ;
-	this->inventory[idx] == NULL;
+	this->inventory[idx] = NULL;
 }
 
 void Character::use(int idx, ICharacter& target)

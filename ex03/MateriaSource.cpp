@@ -41,7 +41,7 @@ void MateriaSource::learnMateria(AMateria* m)
 		return;
 	for (int i = 0; i < 4; i++)
 	{
-		if(this->templates[i] = NULL)
+		if(this->templates[i] == NULL)
 		{
 			this->templates[i] = m->clone();
 			return;
@@ -50,12 +50,12 @@ void MateriaSource::learnMateria(AMateria* m)
 
 }
 
-AMateria* createMateria(std::string const& type)
+AMateria* MateriaSource::createMateria(std::string const& type)
 {
 	for (int i = 0; i < 4; i++)
 	{
-		if(this->templates[i] != NULL && this->templates[i]->getType() == type)
-			return this->templates[i]->clone;
+		 if (this->templates[i] != NULL && this->templates[i]->getType() == type)
+            return this->templates[i]->clone();
 	}
 	return NULL;
 }

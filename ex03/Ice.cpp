@@ -3,7 +3,7 @@
 #include <iostream>
 
 Ice::Ice()
-	: AMateria("Ice")
+	: AMateria("ice")
 {
 }
 

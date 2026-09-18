@@ -1,7 +1,7 @@
 #ifndef AMATERIA_HPP
 #define AMATERIA_HPP
 
-#include <stirng>
+#include <string>
 
 class ICharacter;
 
