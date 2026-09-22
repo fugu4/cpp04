@@ -6,6 +6,10 @@
 
 int main()
 {
+
+    // Animal animal; 
+    // ↑コンパイルできなければabstract classとして正常
+
     const int size = 10;
     Animal* animals[size];
 
@@ -44,3 +48,9 @@ int main()
 
     return 0;
 }
+
+// int main()
+// {
+//     Animal Animal;
+//     return 0;
+// }
